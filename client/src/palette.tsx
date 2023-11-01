@@ -1,6 +1,8 @@
 import { createTheme } from "@mui/material/styles";
 
 const sand = "#d8bd8a";
+const dark = "#2C262C";
+const white = "#00000";
 
 export const theme = createTheme({
   palette: {
@@ -11,8 +13,8 @@ export const theme = createTheme({
       // contrastText: will be calculated to contrast with palette.primary.main
     },
     secondary: {
-      main: sand,
-      light: "#F5EBFF",
+      main: dark,
+      light: white,
       // dark: will be calculated from palette.secondary.main,
       contrastText: "#47008F",
     },
