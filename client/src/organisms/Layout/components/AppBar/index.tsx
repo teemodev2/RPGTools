@@ -1,7 +1,7 @@
+import { Box, Typography } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import ProfileMenu from "../ProfileMenu";
-import { Box, Typography } from "@mui/material";
 
 function ApplicationBar() {
   return (
