@@ -29,6 +29,7 @@ function ProfileMenu() {
           display: "flex",
           alignItems: "center",
           textAlign: "center",
+          mx: 2,
         }}
       >
         <Tooltip title="Profil">
