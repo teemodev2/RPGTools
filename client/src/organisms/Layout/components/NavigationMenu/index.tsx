@@ -6,19 +6,29 @@ function NavigationMenu() {
   const fakeMenu = [
     {
       name: "Dons",
-      route: "/dons",
+      route: "/feats",
       icon: <AccessibilityIcon />,
     },
-    { name: "Compétences", route: "/competences", icon: <AccessibilityIcon /> },
-    { name: "Équipements", route: "/equipements", icon: <AccessibilityIcon /> },
+    { name: "Compétences", route: "/home", icon: <AccessibilityIcon /> },
+    { name: "Équipements", route: "/", icon: <AccessibilityIcon /> },
   ];
 
   return (
-    <Box sx={{ backgroundColor: "primary.main", width: "10%" }}>
+    <Box
+      sx={{
+        height: `calc(100vh - 64px)`,
+        display: "flex",
+        flexDirection: "column",
+        overflow: "auto",
+        backgroundColor: "primary.light",
+        width: (theme) => theme.spacing(25),
+        boxShadow: 2,
+      }}
+    >
       {fakeMenu.map((item) => (
         <Box display="flex" alignItems="center" sx={{ ml: 1, mt: 2 }}>
           {item.icon}
-          <Link to={"/feats"}>
+          <Link to={item.route}>
             <Typography sx={{ ml: 1 }}>{item.name}</Typography>
           </Link>
         </Box>

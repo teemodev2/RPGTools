@@ -1,8 +1,7 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Typography } from "@mui/material";
 
 function FeatsGrid() {
-  return <Box>HELLO WORLD</Box>;
+  return <Typography sx={{ fontSize: 20 }}>HELLO WORLD</Typography>;
 }
 
 export default FeatsGrid;
